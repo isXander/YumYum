@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "yumyum:goat_meat"
+  },
+  "result": "yumyum:cooked_goat_meat",
+  "experience": 0.35,
+  "cookingtime": 100
+}

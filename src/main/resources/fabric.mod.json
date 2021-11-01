@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "yumyum",
+  "version": "${version}",
+
+  "name": "YumYum",
+  "description": "Makes mobs drop food if they don't already and adds exclusive perks to each food item.",
+  "authors": [
+    "isXander"
+  ],
+  "contact": {
+    "homepage": "https://isxander.dev/",
+    "sources": "https://github.com/isXander/YumYum"
+  },
+
+  "license": "LGPL-2.1",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.isxander.yumyum.YumYum"
+      }
+    ],
+    "kambrik": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.isxander.yumyum.items.YumItems"
+      }
+    ]
+  },
+  "mixins": [
+    "yumyum.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "fabric-language-kotlin": ">=1.6.5+kotlin.1.5.31",
+    "minecraft": "1.17.x",
+    "kambrik": "1.x.x"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "dev.isxander.yumyum.mixins",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "BeeEntity_DropStinger"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
